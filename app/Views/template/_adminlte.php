@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE 3 | DataTables</title>
-
+  
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -13,8 +13,13 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/Admin_lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>/Admin_lte/dist/css/adminlte.min.css">
+  <!-- jQuery -->
+<script src="<?php echo base_url(); ?>/Admin_lte/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="<?php echo base_url(); ?>/Admin_lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -127,10 +132,9 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery -->
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="<?php echo base_url(); ?>/Admin_lte/plugins/moment/moment.min.js"></script>
+<script src="<?php echo base_url(); ?>/Admin_lte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- DataTables  & Plugins -->
 <script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -144,13 +148,26 @@
 <script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="<?php echo base_url(); ?>/Admin_lte/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?php echo base_url(); ?>/Admin_lte/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url(); ?>/Admin_lte/dist/js/demo.js"></script>
+<!-- swall alert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
 <!-- Page specific script -->
+
 <script>
+  function removeError(param) {
+    console.log(param)
+      $('input[name="' + param + '"],select[name="' + param + '"],radio[name="' + param + '"]').removeClass('is-invalid')
+    }
   $(function () {
+    bsCustomFileInput.init();
+    $('#reservationdatetime').datetimepicker({ 
+      format: 'D-M-YYYY HH:mm',
+      icons: { time: 'far fa-clock' }
+     });
     $("#example1").DataTable({
       "responsive": true, "lengthChange": false, "autoWidth": false,
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
@@ -165,6 +182,44 @@
       "responsive": true,
     });
   });
+  function reset() {
+      $("input[type=text], textarea,input[type=password],select").val("");
+    }
+
+    function Nberhasil(text) {
+      Swal.fire({
+        icon: 'success',
+        title: text,
+        showConfirmButton: false,
+        timer: 1500
+      })
+    }
+
+    function Nloading() {
+      Swal.fire({
+        title: "Loading...",
+        text: "",
+        imageUrl: "<?php echo base_url(); ?>/Admin_lte/dist/img/loading.gif",
+        showConfirmButton: false,
+        allowOutsideClick: false
+      });
+    }
+
+    function Nwarning(text) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Oops...',
+        text: text
+      })
+    }
+
+    function Nerror(text) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error !!!',
+        text: text
+      })
+    }
 </script>
 </body>
 </html>
