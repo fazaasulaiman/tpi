@@ -75,4 +75,14 @@ class Validation
 			]
 		],
 	];
+    // public $removeLapharian = [
+		
+	// 	'id' => [
+	// 		'rules' => 'isSeksi[id]|isYourData[id]',
+	// 		'errors' => [
+	// 			'isSeksi' => 'Hanya untuk user seksi',
+	// 			'isYourData' => 'Hanya Untuk User Seksi Yang berwenang',
+	// 		]
+	// 	]
+	// ];
 }

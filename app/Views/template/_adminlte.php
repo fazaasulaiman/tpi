@@ -164,8 +164,8 @@
     }
   $(function () {
     bsCustomFileInput.init();
-    $('#reservationdatetime').datetimepicker({ 
-      format: 'D-M-YYYY HH:mm',
+    $('#reservationdatetime,#reservationdatetime2').datetimepicker({ 
+      format: 'DD-MM-YYYY HH:mm',
       icons: { time: 'far fa-clock' }
      });
     $("#example1").DataTable({
