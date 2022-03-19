@@ -8,18 +8,18 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/Admin_lte/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="/Admin_lte/plugins/fontawesome-free/css/all.min.css">
   <!-- DataTables -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/Admin_lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="/Admin_lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="/Admin_lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="/Admin_lte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <link rel="stylesheet" href="/Admin_lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/Admin_lte/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/Admin_lte/dist/css/adminlte.min.css">
   <!-- jQuery -->
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/jquery/jquery.min.js"></script>
+<script src="/Admin_lte/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/Admin_lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -46,8 +46,8 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?php echo base_url(); ?>/Admin_lte/index3.html" class="brand-link">
-      <img src="<?php echo base_url(); ?>/Admin_lte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <a href="/Admin_lte/index3.html" class="brand-link">
+      <img src="/Admin_lte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
 
@@ -56,7 +56,7 @@
       <!-- Sidebar user (optional) -->
       <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="<?php echo base_url(); ?>/Admin_lte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="/Admin_lte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
@@ -133,26 +133,26 @@
 <!-- ./wrapper -->
 
 
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/moment/moment.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="/Admin_lte/plugins/moment/moment.min.js"></script>
+<script src="/Admin_lte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- DataTables  & Plugins -->
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/jszip/jszip.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/pdfmake/pdfmake.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/pdfmake/vfs_fonts.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-buttons/js/buttons.print.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-<script src="<?php echo base_url(); ?>/Admin_lte/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<script src="/Admin_lte/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/Admin_lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/Admin_lte/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/Admin_lte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="/Admin_lte/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/Admin_lte/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="/Admin_lte/plugins/jszip/jszip.min.js"></script>
+<script src="/Admin_lte/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="/Admin_lte/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="/Admin_lte/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="/Admin_lte/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="/Admin_lte/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="/Admin_lte/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
 <!-- AdminLTE App -->
-<script src="<?php echo base_url(); ?>/Admin_lte/dist/js/adminlte.min.js"></script>
+<script src="/Admin_lte/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="<?php echo base_url(); ?>/Admin_lte/dist/js/demo.js"></script>
+<script src="/Admin_lte/dist/js/demo.js"></script>
 <!-- swall alert -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
 <!-- Page specific script -->
@@ -199,7 +199,7 @@
       Swal.fire({
         title: "Loading...",
         text: "",
-        imageUrl: "<?php echo base_url(); ?>/Admin_lte/dist/img/loading.gif",
+        imageUrl: "/Admin_lte/dist/img/loading.gif",
         showConfirmButton: false,
         allowOutsideClick: false
       });
