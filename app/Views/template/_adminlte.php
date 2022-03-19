@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/lte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <link rel="stylesheet" href="/lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/lte/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/lte/assets/css/adminlte.min.css">
   <!-- jQuery -->
 <script src="/lte/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
@@ -47,7 +47,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="/lte/index3.html" class="brand-link">
-      <img src="/lte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="/lte/assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
 
@@ -56,7 +56,7 @@
       <!-- Sidebar user (optional) -->
       <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="/lte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="/lte/assets/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
@@ -150,9 +150,9 @@
 <script src="/lte/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <script src="/lte/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
 <!-- AdminLTE App -->
-<script src="/lte/dist/js/adminlte.min.js"></script>
+<script src="/lte/assets/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="/lte/dist/js/demo.js"></script>
+<script src="/lte/assets/js/demo.js"></script>
 <!-- swall alert -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
 <!-- Page specific script -->
@@ -199,7 +199,7 @@
       Swal.fire({
         title: "Loading...",
         text: "",
-        imageUrl: "/lte/dist/img/loading.gif",
+        imageUrl: "/lte/assets/img/loading.gif",
         showConfirmButton: false,
         allowOutsideClick: false
       });
