@@ -32,6 +32,14 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->group('lapharian', ['filter' => 'auth'],function ($routes) {
+    $routes->get('/', 'Lapharian::index');
+    $routes->get('tambah', 'Lapharian::tambah',['filter' => 'auth']);
+    $routes->post('process', 'Lapharian::process');
+    $routes->post('list', 'Lapharian::list');
+    $routes->get('list', 'Lapharian::list');
+    $routes->post('remove', 'Lapharian::remove');
+});
 
 /*
  * --------------------------------------------------------------------

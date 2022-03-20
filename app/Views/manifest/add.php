@@ -28,7 +28,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <div id="alert-error">
+                        <div class="alert-error">
                             
                         </div>
                         <form method="post" id="tambah" enctype="multipart/form-data">
@@ -194,7 +194,7 @@
             success: function(data) {
                 if (data.status) {
                     reset();
-                    $('#customFile').val('').trigger('change');
+                    $('#customFile').next('label').html('Select a file');
                     $('input[name="riksa"]').prop('checked', false);
                     $('input[name="terminal"]').prop('checked', false);
                     $('#validate').text('Submit');

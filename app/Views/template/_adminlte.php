@@ -97,12 +97,18 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/lapharian" class="nav-link active">
+                <a href="/lapharian" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>List Harian</p>
                 </a>
               </li>
             </ul>
+            <li class="nav-item">
+                <a href="/home/logout" class="nav-link">
+                <i class="nav-icon fas fa-sign-out"></i>
+                  <p>Log Out</p>
+                </a>
+              </li>
           </li>
          
         </ul>
@@ -163,6 +169,14 @@
       $('input[name="' + param + '"],select[name="' + param + '"],radio[name="' + param + '"]').removeClass('is-invalid')
     }
   $(function () {
+    $(".reset").click(function() {
+      $(".error,alert-error").empty();
+      $('#customFile').next('label').html('Select a file');
+      $("input[type=text], textarea,input[type=password], select").val("");
+      $('input[name="riksa"]').prop('checked', false);
+      $('input[name="terminal"]').prop('checked', false);
+      $('#tambah input[name],#tambah select').removeClass('is-invalid');
+    });
     bsCustomFileInput.init();
     $('#reservationdatetime,#reservationdatetime2').datetimepicker({ 
       format: 'DD-MM-YYYY HH:mm',

@@ -19,6 +19,7 @@ class Lapharian extends BaseController
     }
     public function tambah()
     {
+        
         return view('manifest/add');
     }
     public function process()

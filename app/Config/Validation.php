@@ -6,6 +6,7 @@ use CodeIgniter\Validation\CreditCardRules;
 use CodeIgniter\Validation\FileRules;
 use CodeIgniter\Validation\FormatRules;
 use CodeIgniter\Validation\Rules;
+use App\Validation\CustomRules;
 
 class Validation
 {
@@ -24,6 +25,7 @@ class Validation
         FormatRules::class,
         FileRules::class,
         CreditCardRules::class,
+		CustomRules::class,
     ];
 
     /**
@@ -69,12 +71,24 @@ class Validation
 		'doc'    => [
 			'rules'  => 'uploaded[doc]|max_size[doc,5000]|ext_in[doc,pdf]',
 			'errors' => [
-				'uploaded' => 'Tidak boleh kosong.',
-				'max_size' => 'Maksimal size 5 MB',
-				'ext_in' => 'File Harus Berupa PDF'
+				'uploaded' => 'Lampiran Tidak boleh kosong.',
+				'max_size' => 'Lampiran Maksimal size 5 MB',
+				'ext_in' => 'Lampiran File Harus Berupa PDF'
 			]
 		],
 	];
+	public $login = [
+		'password' => [
+			'rules' => 'required|min_length[4]|max_length[50]|isLogin[password]',
+			'errors' => [
+				'required' => '{field} Harus diisi',
+				'min_length' => '{field} Minimal 4 Karakter',
+				'max_length' => '{field} Maksimal 50 Karakter',
+				'isLogin' => '{field} Salah'
+			]
+		],
+	];
+
     // public $removeLapharian = [
 		
 	// 	'id' => [
