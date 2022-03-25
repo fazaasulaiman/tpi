@@ -99,6 +99,7 @@
               <thead>
                 <tr>
                   <th>No Flight</th>
+                  <th>Rute</th>
                   <th>Tgl & jam</th>
                   <th>Terminal</th>
                   <th>Kru</th>
@@ -115,6 +116,7 @@
               <tfoot>
                 <tr>
                   <th>No Flight</th>
+                  <th>Rute</th>
                   <th>Tgl & jam</th>
                   <th>Terminal</th>
                   <th>Kru</th>

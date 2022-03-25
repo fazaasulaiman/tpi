@@ -68,6 +68,12 @@ class Validation
 				'required' => 'Nomer Flight Tidak Boleh Kosong.'
 			]
 		],
+		'rute'    => [
+			'rules'  => 'required',
+			'errors' => [
+				'required' => 'rute Tidak Boleh Kosong.'
+			]
+		],
 		'doc'    => [
 			'rules'  => 'uploaded[doc]|max_size[doc,5000]|ext_in[doc,pdf]',
 			'errors' => [

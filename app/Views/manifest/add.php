@@ -28,8 +28,8 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <div class="alert-error">
-                            
+                        <div id="alert-error-tambah">
+
                         </div>
                         <form method="post" id="tambah" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
@@ -116,28 +116,28 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>KRU</label>
-                                        <textarea class="form-control" rows="3" placeholder="Enter ..." name="kru"></textarea>
+                                        <label>Rute</label>
+                                        <input type="text" class="form-control" rows="3" placeholder="Rute ..." name="rute">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>WNA</label>
-                                        <textarea class="form-control" rows="3" placeholder="Enter ..." name="wna"></textarea>
+                                        <label>KRU</label>
+                                        <input type="text" class="form-control" rows="3" placeholder="Jumlah Kru ..." name="kru">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>WNI</label>
-                                        <textarea class="form-control" rows="3" placeholder="Enter ..." name="wni"></textarea>
+                                        <label>WNA</label>
+                                        <input type="text" class="form-control" rows="3" placeholder="Jumlah WNA ..." name="wna">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Keterangan</label>
-                                        <textarea class="form-control" rows="3" placeholder="Enter ..." name="keterangan"></textarea>
+                                        <label>WNI</label>
+                                        <input type="text" class="form-control" rows="3" placeholder="Jumlah WNI ..." name="wni">
                                     </div>
                                 </div>
                             </div>
@@ -149,6 +149,12 @@
                                             <input type="file" class="custom-file-input" id="customFile" name="doc" accept="application/pdf">
                                             <label class="custom-file-label" for="customFile">Choose file</label>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Keterangan</label>
+                                        <textarea class="form-control" rows="3" placeholder="Enter ..." name="keterangan"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -205,10 +211,11 @@
                     Nwarning('Input data sesuai dengan yang diminta');
                     $.each(data.text, function(key, value) {
                         $('input[name="' + key + '"],select[name="' + key + '"],radio[name="' + key + '"]').addClass('is-invalid');
-                        html += value+'<br>';
+                        html += value + '<br>';
                     });
                     html += '</div>';
-                    $("#alert-error").append(html);
+                    console.log(html);
+                    $("#alert-error-tambah").append(html);
                     $("#validate").removeClass('disabled');
                 }
             },

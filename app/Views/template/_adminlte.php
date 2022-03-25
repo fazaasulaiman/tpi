@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="/lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="/lte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
-  <link rel="stylesheet" href="/lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="/lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="/lte/assets/css/adminlte.min.css">
   <!-- jQuery -->
@@ -140,7 +140,7 @@
 
 
 <script src="/lte/plugins/moment/moment.min.js"></script>
-<script src="/lte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="/lte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.js"></script>
 <!-- DataTables  & Plugins -->
 <script src="/lte/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="/lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -170,7 +170,7 @@
     }
   $(function () {
     $(".reset").click(function() {
-      $(".error,alert-error").empty();
+      $(".error,#alert-error-tambah").empty();
       $('#customFile').next('label').html('Select a file');
       $("input[type=text], textarea,input[type=password], select").val("");
       $('input[name="riksa"]').prop('checked', false);
@@ -182,6 +182,7 @@
       format: 'DD-MM-YYYY HH:mm',
       icons: { time: 'far fa-clock' }
      });
+    
     $("#example1").DataTable({
       "responsive": true, "lengthChange": false, "autoWidth": false,
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]

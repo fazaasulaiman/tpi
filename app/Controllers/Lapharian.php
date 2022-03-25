@@ -47,7 +47,7 @@ class Lapharian extends BaseController
     public function list()
     {
         $db = db_connect();
-        $builder = $db->table('lap_harian')->select('id,no_flight, waktu, terminal,  kru, wna,wni,keterangan,doc,riksa');
+        $builder = $db->table('lap_harian')->select('id,no_flight, rute,waktu, terminal,  kru, wna,wni,keterangan,doc,riksa');
         return DataTable::of($builder)
             ->hide('doc')
             ->hide('id')

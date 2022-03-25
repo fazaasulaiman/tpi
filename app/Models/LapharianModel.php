@@ -10,5 +10,5 @@ class LapharianModel extends Model
     protected $primaryKey = "id";
     protected $returnType = "object";
     protected $useTimestamps = true;
-    protected $allowedFields = ['riksa','waktu','terminal','no_flight', 'kru', 'wni','wna','doc','keterangan'];
+    protected $allowedFields = ['riksa','waktu','rute','terminal','no_flight', 'kru', 'wni','wna','doc','keterangan'];
 }
